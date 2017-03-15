@@ -74,10 +74,13 @@
                 <h3>Pricing</h3>
                 <div class="row">
                     <div class="col-sm-3">
-                        {!! form_row($form->pricing_type, $options = ['attr'=>['placeholder'=>'Paid']]) !!}
+                        {!! form_row($form->pricing_type) !!}
                     </div>
                     <div class="col-sm-3">
-                        {!! form_row($form->pricing_bill_at, $options = ['attr'=>['placeholder'=>'On Location']]) !!}
+                        {!! form_row($form->pricing_bill_at) !!}
+                    </div>
+                    <div class="col-sm-2">
+                        {!! form_row($form->pricing_percentage, $options = ['attr'=>['placeholder'=>'100%']]) !!}
                     </div>
                     <div class="col-sm-3">
                         {!! form_row($form->pricing_amount, $options = ['attr'=>['placeholder'=>'0.00']]) !!}

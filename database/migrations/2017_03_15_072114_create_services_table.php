@@ -24,6 +24,7 @@ class CreateServicesTable extends Migration
             $table->integer('duration_minutes')->unsigned()->default(15);
             $table->string('pricing_type')->nullable();
             $table->double('pricing_amount')->nullable();
+            $table->double('pricing_percentage')->nullable();
             $table->string('pricing_bill_at')->nullable();
             $table->smallInteger('buffer_before')->unsigned()->nullable();
             $table->smallInteger('buffer_after')->unsigned()->nullable();
